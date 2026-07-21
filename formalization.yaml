@@ -1,0 +1,18 @@
+version: "v0.3"
+
+project:
+  name: "Distance Geometry in Lean"
+  authors: ["Egor Lyfar"]
+  license: "Apache-2.0"
+
+sources:
+  - title: "Remarks to Maurice Fréchet's Article 'Sur la définition axiomatique d'une classe d'espace distanciés vectoriellement applicable sur l'espace de Hilbert'"
+    authors: ["I. J. Schoenberg"]
+    id: "doi:10.2307/1968654"
+
+automation:
+  methods:
+    - method: "agent"
+
+review:
+  status: "self-assessed"
