@@ -1,5 +1,20 @@
 # Distance Geometry in Lean
 
+## MISHA mission
+
+My son Misha has a rare genetic hearing loss. I am building an independent AI
+research lab for rare diseases. Every result that survives formal checking and
+outside review is one step toward that lab—and toward tools that may help
+millions of people.
+
+One rare disease is rare. Rare diseases together are not.
+
+For this project, the possible biomedical path runs through molecular structure
+and structural biology, fields that matter to gene-therapy research. This
+repository does not claim a gene-therapy result. It tests whether our
+AI-assisted workflow can turn mathematics into correct, reviewable, reusable
+proofs.
+
 This repository contains a Lean 4 formalization of several results in finite
 Euclidean distance geometry. It connects squared-distance matrices with centered
 Gram matrices, proves a two-candidate trilateration bound, and treats the segment
