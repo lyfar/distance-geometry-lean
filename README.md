@@ -9,9 +9,11 @@ millions of people.
 
 One rare disease is rare. Rare diseases together are not.
 
-For this project, the possible biomedical path runs through molecular structure
-and structural biology, fields that matter to gene-therapy research. This
-repository does not claim a gene-therapy result. It tests whether our
+For this project, the possible biomedical path is indirect. Distance geometry
+is used in [protein-structure determination](https://pmc.ncbi.nlm.nih.gov/articles/PMC4384350/),
+and structural analysis informs
+[gene-therapy vector design](https://www.nature.com/articles/gt2009101).
+This repository does not claim a gene-therapy result. It tests whether our
 AI-assisted workflow can turn mathematics into correct, reviewable, reusable
 proofs.
 
