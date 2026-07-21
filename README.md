@@ -18,15 +18,15 @@ AI-assisted workflow can turn mathematics into correct, reviewable, reusable
 proofs.
 
 This repository contains a Lean 4 formalization of several results in finite
-Euclidean distance geometry. It connects squared-distance matrices with centered
-Gram matrices, proves a two-candidate trilateration bound, and treats the segment
-and triangle cases of the Cayley--Menger determinant.
+Euclidean distance geometry. It connects squared-distance matrices with Gram
+matrices anchored at a basepoint, proves a two-candidate trilateration bound, and
+treats the segment and triangle cases of the Cayley--Menger determinant.
 
 ## Main declarations
 
-- `DistanceGeometry.schoenberg`: a symmetric hollow matrix embeds as squared
-  distances in `k`-dimensional Euclidean space if and only if its centered Gram
-  matrix is positive semidefinite and has rank at most `k`.
+- `DistanceGeometry.schoenberg`: for `n ≥ 1`, a symmetric hollow `n × n` matrix
+  embeds as squared distances in `k`-dimensional Euclidean space if and only if its
+  basepoint-centered Gram matrix is positive semidefinite and has rank at most `k`.
 - `DistanceGeometry.encard_setOf_forall_dist_eq_le_two`: if a family of centers
   spans a hyperplane, the points with prescribed distances to those centers form
   a set of cardinality at most two.
@@ -36,6 +36,11 @@ and triangle cases of the Cayley--Menger determinant.
 - `DistanceGeometry.cayleyMenger_det_heron`: for three points in the Euclidean
   plane, the Cayley--Menger determinant equals `-16` times the squared area of
   the triangle.
+
+The last declaration states the triangle-area identity underlying Heron's formula.
+After expansion and factorization in the three side lengths, the identity is equivalent
+to Heron's formula. The repository does not state the factorized formula as a separate
+theorem.
 
 The supporting API includes a rank-controlled factorization of
 positive-semidefinite matrices and algebraic Cayley--Menger formulas for segments
@@ -47,6 +52,10 @@ The development concerns finite configurations over the real numbers. The
 Cayley--Menger part covers dimensions one and two. The DMDGP connection consists
 of the two-candidate sphere-intersection theorem; algorithmic reconstruction and
 the general dimension formula are outside the current scope.
+
+`IsPreDistMatrix` is the project's symmetric-and-hollow structural predicate. It
+omits entrywise nonnegativity; some distance-geometry references include that
+condition in the term "pre-distance matrix".
 
 The mathematics is classical. This repository contributes a Lean formalization
 and reusable definitions and lemmas around it.
