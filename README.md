@@ -1,15 +1,6 @@
 # Distance Geometry in Lean
 
-## MISHA mission
-
-My son Misha has a rare genetic hearing loss. I am building an independent AI
-research lab for rare diseases. Every result that survives formal checking and
-outside review is one step toward that lab—and toward tools that may help
-millions of people.
-
-One rare disease is rare. Rare diseases together are not.
-
-For this project, the possible biomedical path is indirect. Distance geometry
+This repository is part of an AI-assisted research workflow that formalizes mathematics in Lean so results are independently checkable. For this project, the possible biomedical path is indirect. Distance geometry
 is used in [protein-structure determination](https://pmc.ncbi.nlm.nih.gov/articles/PMC4384350/),
 and structural analysis informs
 [gene-therapy vector design](https://www.nature.com/articles/gt2009101).
